@@ -14,11 +14,15 @@ In this program, break stops the while loop when the user enters "q" so the prog
 
 ## Week 03
 
-### AI Tool Used: Gemini
-- **Prompt Used:** Bana temel seviyede Python ile çalışan bir sinema bileti gişe programı yaz. while True döngüsü olsun, q ile çıkılsın. Yaş 0-120 arası değilse veya gün yanlış girilirse continue ile başa dönsün. if/elif ile yaş ve öğrenci durumuna göre indirimleri sırayla hesaplasın. Lütfen yeni başlayan birinin anlayacağı basitlikte yaz.
-- **What did you change?:** I changed the math for the discounts. Instead of finding the discount amount and subtracting it, I just multiplied the price by the remaining percentage to keep it simple.
-- **Tests:** 
+### AI Tool Used: 
+Gemini
+### Prompt Used:
+Bana temel seviyede Python ile çalışan bir sinema bileti gişe programı yaz. while True döngüsü olsun, q ile çıkılsın. Yaş 0-120 arası değilse veya gün yanlış girilirse continue ile başa dönsün. if/elif ile yaş ve öğrenci durumuna göre indirimleri sırayla hesaplasın. Lütfen yeni başlayan birinin anlayacağı basitlikte yaz.
+### What did you change?:
+I changed the math for the discounts. Instead of finding the discount amount and subtracting it, I just multiplied the price by the remaining percentage to keep it simple.
+### Tests: 
   1. Age 6 (boundary), weekday, no -> Child, 120.00 TRY
   2. Age 22, weekend, yes -> Student, 175.00 TRY
   3. Age 70, weekday, no -> Senior, 100.00 TRY
-- **Why does the order of the rules matter?:** Python checks the rules from top to bottom. If we put the "Student" rule before the "Child" rule, a 10-year-old student will get the 30% student discount instead of their 40% child discount.
+### Why does the order of the rules matter?:
+Python checks the rules from top to bottom. If we put the "Student" rule before the "Child" rule, a 10-year-old student will get the 30% student discount instead of their 40% child discount.
