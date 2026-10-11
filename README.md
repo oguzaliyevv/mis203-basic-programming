@@ -26,3 +26,17 @@ I changed the math for the discounts. Instead of finding the discount amount and
   3. Age 70, weekday, no -> Senior, 100.00 TRY
 ### Why does the order of the rules matter?:
 Python checks the rules from top to bottom. If we put the "Student" rule before the "Child" rule, a 10-year-old student will get the 30% student discount instead of their 40% child discount.
+
+
+##  Week 04
+
+### AI Tool Used:
+Gemini
+### Prompt Used:
+Random ve time kütüphanelerini kullanan basit bir terminal oyunu yaz. while döngüsü ve if-else yapılarıyla çalışan küçük bir metin tabanlı macera oyunu yapacaksın. Random ve time kütüphanelerini kullansın, odalardan rastgele altın veya canavar çıksın, q ile kaçabilelim. 
+### What did you change?:
+I changed some text messages and removed extra blank lines. I also adjusted the damage and gold values to make the game balanced. I set the starting HP to 100, reduced `time.sleep` to 1 second so the game doesn't feel too slow, and adjusted the gold/damage ranges to balance the game. I also formatted the final average gold using `.2f`.
+### Libraries Used: 
+1. `random`: Used to generate random room events, gold amounts, and monster damage.
+2. `time`: Used for `time.sleep(1)` to add realistic suspense while opening doors.
+
